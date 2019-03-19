@@ -1,1 +1,1 @@
-# React based form for formalizer
+# xField map with React field components
