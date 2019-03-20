@@ -35,13 +35,13 @@
   },
   "./dist/react-xfields.umd.production.js": {
     "bundled": 593710,
-    "minified": 88920,
-    "gzipped": 29948
+    "minified": 88919,
+    "gzipped": 29983
   },
   "./dist/react-xfields.umd.development.js": {
     "bundled": 593710,
-    "minified": 88920,
-    "gzipped": 29948
+    "minified": 88919,
+    "gzipped": 29983
   },
   "./dist/react-xfields.cjs.production.js": {
     "bundled": 3242,
