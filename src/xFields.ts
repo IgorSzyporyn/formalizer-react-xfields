@@ -1,11 +1,11 @@
-import { XFieldMap } from '@formalizer/core'
-import { FormFieldExtraProps } from '@formalizer/react-form'
+import { IXFieldMap } from '@formalizer/core'
+import { IFormFieldExtraProps } from '@formalizer/react-form'
 
-import TextField from './Field/TextField'
 import FieldGroup from './Field/FieldGroup'
 import JsonField from './Field/JsonField'
+import TextField from './Field/TextField'
 
-export const xFieldMap: XFieldMap<FormFieldExtraProps> = {
+export const xFieldMap: IXFieldMap<IFormFieldExtraProps> = {
   group: {
     type: 'group',
     valueType: 'none',

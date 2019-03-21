@@ -34,36 +34,36 @@
     }
   },
   "./dist/react-xfields.umd.production.js": {
-    "bundled": 593710,
-    "minified": 88919,
-    "gzipped": 29983
+    "bundled": 1189826,
+    "minified": 177392,
+    "gzipped": 59586
   },
   "./dist/react-xfields.umd.development.js": {
-    "bundled": 593710,
-    "minified": 88919,
-    "gzipped": 29983
+    "bundled": 1189826,
+    "minified": 177392,
+    "gzipped": 59586
   },
   "./dist/react-xfields.cjs.production.js": {
-    "bundled": 3242,
-    "minified": 1930,
-    "gzipped": 606
+    "bundled": 2868,
+    "minified": 2004,
+    "gzipped": 626
   },
   "./dist/react-xfields.cjs.development.js": {
-    "bundled": 3242,
-    "minified": 1930,
-    "gzipped": 606
+    "bundled": 2868,
+    "minified": 2004,
+    "gzipped": 626
   },
   "dist/react-xfields.esm.js": {
-    "bundled": 2476,
-    "minified": 1712,
-    "gzipped": 522,
+    "bundled": 2433,
+    "minified": 1782,
+    "gzipped": 541,
     "treeshaked": {
       "rollup": {
         "code": 59,
         "import_statements": 59
       },
       "webpack": {
-        "code": 2187
+        "code": 2193
       }
     }
   }

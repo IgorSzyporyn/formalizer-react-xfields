@@ -1,28 +1,26 @@
+import {
+  FormFieldChildProps,
+  FormFieldProps,
+  FormalizerField,
+  createField,
+} from '@formalizer/react-form'
 import React from 'react'
 import Field from './Field'
-import {
-  FormalizerField,
-  FormFieldProps,
-  renderField,
-} from '@formalizer/react-form'
 
-const JsonField: React.SFC<FormFieldProps> = (props: FormFieldProps) => {
+function renderField(props: FormFieldChildProps) {
+  const { fields } = props
+
   return (
-    <FormalizerField
-      {...props}
-      render={renderProps => {
-        return (
-          <Field className="FRX-JsonField" {...renderProps}>
-            {renderProps.fields
-              ? renderProps.fields.map(field => {
-                  return renderField(field, renderProps.xFieldRefMap)
-                })
-              : null}
-          </Field>
-        )
-      }}
-    />
+    <Field className="FRX-JsonField" {...props}>
+      {fields && fields.map(field => createField(field, props.xFieldRefMap))}
+    </Field>
   )
+}
+
+const JsonField: React.FunctionComponent<FormFieldProps> = (
+  props: FormFieldProps
+) => {
+  return <FormalizerField {...props} render={renderField} />
 }
 
 JsonField.defaultProps = {}

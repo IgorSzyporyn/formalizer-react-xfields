@@ -1,29 +1,25 @@
-import React from 'react'
 import {
-  FormalizerFieldGroup,
+  FormFieldChildProps,
   FormFieldProps,
-  renderFields,
+  FormalizerFieldGroup,
+  createFields,
 } from '@formalizer/react-form'
+import React from 'react'
 
 type Props = FormFieldProps & {
   className?: string
 }
 
-const FieldGroup: React.SFC<Props> = (props: Props) => {
+function renderField(props: FormFieldChildProps) {
   return (
-    <FormalizerFieldGroup
-      {...props}
-      render={renderProps => {
-        return (
-          <div className="FRX-FieldGroup">
-            {renderProps.fields
-              ? renderFields(renderProps.fields, renderProps.xFieldRefMap)
-              : null}
-          </div>
-        )
-      }}
-    />
+    <div className="FRX-FieldGroup">
+      {props.fields && createFields(props.fields, props.xFieldRefMap)}
+    </div>
   )
+}
+
+const FieldGroup: React.FunctionComponent<Props> = (props: Props) => {
+  return <FormalizerFieldGroup {...props} render={renderField} />
 }
 
 FieldGroup.defaultProps = {}
