@@ -6,7 +6,7 @@ import {
 import React from 'react'
 import Field from './Field'
 
-function renderField(props: FormFieldChildProps) {
+const renderField = (props: FormFieldChildProps) => {
   return (
     <Field className="FRX-TextField" {...props}>
       <input {...props.extraProps.inputProps} />

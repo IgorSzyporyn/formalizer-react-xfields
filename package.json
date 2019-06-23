@@ -43,6 +43,7 @@
     "@types/react-dom": "^16.8.2",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-emotion": "^10.0.13",
     "babel-plugin-transform-rename-import": "^2.3.0",
     "cp-cli": "^2.0.0",
     "cross-env": "^5.2.0",
@@ -76,8 +77,10 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.10",
     "@formalizer/core": "file:../formalizer-core/dist",
     "@formalizer/react-form": "file:../formalizer-react-form/dist",
+    "@material-ui/core": "^4.1.2",
     "deepmerge": "^3.2.0",
     "lodash": "^4.17.11",
     "lodash-es": "^4.17.11",
