@@ -34,14 +34,14 @@
     }
   },
   "./dist/react-xfields.umd.production.js": {
-    "bundled": 1189826,
-    "minified": 177392,
-    "gzipped": 59586
+    "bundled": 1490636,
+    "minified": 298985,
+    "gzipped": 89037
   },
   "./dist/react-xfields.umd.development.js": {
-    "bundled": 1189826,
-    "minified": 177392,
-    "gzipped": 59586
+    "bundled": 1490875,
+    "minified": 299540,
+    "gzipped": 89225
   },
   "./dist/react-xfields.cjs.production.js": {
     "bundled": 2868,
